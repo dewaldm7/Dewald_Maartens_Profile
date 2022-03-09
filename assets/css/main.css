@@ -1,0 +1,389 @@
+
+
+ body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+ol, ul {
+	list-style: none;
+}
+
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+
+#myPhoto {
+	height: 200px;
+	float: left;
+	border-radius: 90%;	
+	margin: 8px 8px;
+	border: solid 2px #e60707;
+}
+
+#aboutPhoto {
+height: 200px;
+
+}
+
+#keyboardPhoto {
+
+	float: right;
+	
+
+}
+
+
+
+	
+
+
+
+	body {
+		background-color: black;
+		background-repeat: no-repeat;
+		color: whitesmoke;
+		font-size: 13.5pt;
+		font-family: 'Roboto Mono';
+		line-height: 1.85em;
+		font-weight: 100;
+	}
+
+
+
+	ul, ol, p, dl {
+		margin: 0 0 2em 0;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #e60707;
+	}
+
+	a:hover {
+			text-decoration: none;
+		} 
+
+		
+
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 1200px;
+	
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			.container {
+				width: 1200px;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.container {
+				width: calc(100% - 40px);
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.container {
+				width: calc(100% - 50px);
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.container {
+				width: calc(100% - 40px);
+			}
+
+		}
+
+
+	
+
+
+/* Header */
+
+	#header {
+		position: relative;
+		background: url("./images/man.jpg") ;
+		
+		border-bottom: solid 1px gray;
+		
+		
+		background-repeat: no-repeat;
+		
+	}
+
+		#header > .container {
+			position: relative;
+			min-height: 90px;
+			
+			
+		}
+
+		#header h1 {
+			position: absolute;
+			left: 0;
+			bottom: 5px;
+			font-size: 2em;
+			letter-spacing: 10px;
+		
+			
+		}
+
+			#header h1 a {
+				color:whitesmoke;
+				text-decoration: none;
+			
+			}
+
+			#header h1 a:hover {
+				color: #e60707;
+				
+			}
+
+
+
+
+
+		#header nav {
+			position: absolute;
+			right: 0;
+			bottom: 25px;
+			font-weight: 100;
+			
+			
+		}
+
+			#header nav a {
+				color: whitesmoke;
+				text-decoration: none;
+				font-size: 1.5em;
+				margin-left: 25px;
+				outline: 0;
+				
+			}
+
+				#header nav a:hover {
+					color: #e60707;
+				}
+
+		.subpage #header > .container {
+			height: 100px;
+			
+			
+			
+		}
+
+/* Banner */
+
+	#banner {
+		border-top: solid 1px black;
+		box-shadow: inset 0px 1px 0px 0px gray;
+		padding: 35px 0 35px 0;
+		color: whitesmoke;
+		height: 50px;
+	}
+
+		#banner .bordered-feature-image {
+			margin-bottom: 0;
+		}
+
+		#banner p {
+			font-size: 2em;
+			font-weight: 100;
+			line-height: 1.25em;
+			padding-right: 1em;
+			margin: 0 0 1em 0;
+		}
+
+
+
+
+
+
+
+/* Copyright */
+
+	#copyright {
+		border-top: solid 1px gray;
+		
+		text-align: center;
+		padding: 10px 0 10px 0;
+		color: whitesmoke;
+		
+	}
+
+		#copyright a {
+			color: whitesmoke;
+		}
+
+
+	#contactSection {
+		text-align: center;
+	}
+
+
+.bioParagraph {
+	text-align: justify;
+	color: whitesmoke;
+}
+
+
+.figure-caption {
+	float: right;
+
+}
+
+.projects {
+	text-align: center;
+	color: whitesmoke;
+}
+
+/*animation*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body {
+  
+  background-color: black;
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+ 
+  text-align:center;
+}
+
+#rotate-words {
+  max-width:400px;
+  margin:auto;
+  padding:20% 0;
+  font-size:2.2em;
+  text-transform:uppercase;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 200px;
+  color: #e60707;
+  text-align: center;
+}
+
+#rotate-words span {
+  display:block;
+  height:50px;
+  font-size:.7em;
+  text-transform:lowercase;
+  opacity:.8;
+  font-family: 'Rubik', sans-serif;
+}
+
+#rotate-words div {
+ position:absolute;
+ opacity:0;
+ overflow:hidden;
+ left:10vw;
+ width:80vw;
+ line-height:1.2em;
+ animation: rotate-word 32s linear infinite 0s;
+}
+
+@keyframes rotate-word {
+    0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+    3% { opacity: 1;  transform: translateX(0);filter:blur(0px);transform:scale(.9)}
+    12% { opacity: 1; transform: translateX(0);filter:blur(0px);transform:scale(1)}
+    16% { opacity: 0; transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
+
+#rotate-words div:nth-child(2) { animation-delay: 4s}
+#rotate-words div:nth-child(3) { animation-delay: 8s}
+#rotate-words div:nth-child(4) { animation-delay: 12s}
+#rotate-words div:nth-child(5) { animation-delay: 16s}
+#rotate-words div:nth-child(6) { animation-delay: 20s}
+#rotate-words div:nth-child(7) { animation-delay: 24s}
+#rotate-words div:nth-child(8) { animation-delay: 28s}
+
+@keyframes author {
+    0% { opacity: 0;  transform: translateY(100px);filter:blur(10px);transform: scaleY(2)}
+    20% { opacity:0; transform: translateY(200px);filter:blur(10px); transform: scaleY(2)}
+    30% { opacity:1; transform: translateY(0);filter:blur(0px);transform: scaleY(1)}
+    90% { opacity:1; transform: translateY(0);filter:blur(0px);transform: scaleY(.9)}
+    100% { opacity:0; transform: translateY(0);filter:blur(10px);transform: scale(2@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body {
+  background-color: black;
+ 
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  
+  text-align:center;
+}
+
+#rotate-words {
+  max-width:400px;
+  margin:auto;
+  padding:20% 0;
+  font-size:2.2em;
+  text-transform:uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+#rotate-words span {
+  display:block;
+  height:50px;
+  font-size:.7em;
+  text-transform:lowercase;
+  opacity:.8;
+  font-family: 'Rubik', sans-serif;
+}
+
+#rotate-words div {
+ position:absolute;
+ opacity:0;
+ overflow:hidden;
+ left:10vw;
+ width:80vw;
+ line-height:1.2em;
+ animation: rotate-word 32s linear infinite 0s;
+}
+
+@keyframes rotate-word {
+    0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+    3% { opacity: 1;  transform: translateX(0);filter:blur(0px);transform:scale(.9)}
+    12% { opacity: 1; transform: translateX(0);filter:blur(0px);transform:scale(1)}
+    16% { opacity: 0; transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
+
+#rotate-words div:nth-child(2) { animation-delay: 4s}
+#rotate-words div:nth-child(3) { animation-delay: 8s}
+#rotate-words div:nth-child(4) { animation-delay: 12s}
+#rotate-words div:nth-child(5) { animation-delay: 16s}
+#rotate-words div:nth-child(6) { animation-delay: 20s}
+#rotate-words div:nth-child(7) { animation-delay: 24s}
+#rotate-words div:nth-child(8) { animation-delay: 28s}
+
+@keyframes author {
+    0% { opacity: 0;  transform: translateY(100px);filter:blur(10px);transform: scaleY(2)}
+    20% { opacity:0; transform: translateY(200px);filter:blur(10px); transform: scaleY(2)}
+    30% { opacity:1; transform: translateY(0);filter:blur(0px);transform: scaleY(1)}
+    90% { opacity:1; transform: translateY(0);filter:blur(0px);transform: scaleY(.9)}
+    100% { opacity:0; transform: translateY(0);filter:blur(10px);transform: scale(2)}
